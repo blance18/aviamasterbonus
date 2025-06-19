@@ -326,11 +326,12 @@
     item.addEventListener('click', () => item.classList.toggle('open'));
   });
 
-  // Default language
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('lang').value = 'en';
-    document.getElementById('lang').dispatchEvent(new Event('change'));
-  });
+  /// Default language
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('lang').value = 'ru';
+  document.getElementById('lang').dispatchEvent(new Event('change'));
+});
+
 
   let totalSeconds = 24 * 60 * 60;
   const timerEl = document.getElementById("timer");
